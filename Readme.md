@@ -2,7 +2,7 @@
 
 This is the repository for the hep-recommender web application, currently hosted in Heroku.
 
-# Local usage: 
+### Local usage: 
 
 To test the application locally place the file 'embeddings.txt'
 in the folder 'model_artifact'.  
