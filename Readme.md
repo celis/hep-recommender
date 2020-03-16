@@ -14,4 +14,4 @@ Create a new virtual environment and install the required dependencies via
 
 Then in order to start the web application in your local machine run
 
-     python app.py
+    python app.py
