@@ -13,6 +13,9 @@ class LiteratureRecord:
 
     @property
     def references(self) -> List[str]:
+        """
+        Returns the references of the article
+        """
         return [
             element["record"]["$ref"].split("/")[-1]
             for element in self.data["references"]
@@ -21,6 +24,9 @@ class LiteratureRecord:
 
     @property
     def authors_short(self) -> str:
+        """
+        Returns authors of the article, shortened using et. al. if its too long
+        """
         if len(self.data["authors"]) > self.MAX_AUTHORS:
             return "; ".join(
                 [
