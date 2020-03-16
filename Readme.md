@@ -1,1 +1,1 @@
-# hep-recommender
+# HEP recommender
