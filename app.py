@@ -15,6 +15,7 @@ bootstrap.init_app(app)
 config = Configuration()
 gensim_wrapper = load_model(config)
 model = RecommenderModel(gensim_wrapper)
+inspire_api = InspireAPI()
 
 
 @app.route("/", methods=["GET"])
@@ -22,7 +23,6 @@ def index():
     article = None
     recommendations = None
     form = InputForm(request.args)
-    inspire_api = InspireAPI()
 
     if form.validate():
         article = request.args.get("article")
